@@ -359,8 +359,11 @@ mousesel(XEvent *e, int done)
 		}
 	}
 	selextend(evcol(e), evrow(e), seltype, done);
-	if (done)
+	if (done) {
 		setsel(getsel(), e->xbutton.time);
+		if (state == ControlMask)
+			xclipcopy();
+	}
 }
 
 void
@@ -693,6 +696,8 @@ brelease(XEvent *e)
 
 	if (mouseaction(e, 1))
 		return;
+	if (e->xbutton.button == Button3)
+		selclear();
 	if (e->xbutton.button == Button1)
 		mousesel(e, 1);
 }
