@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono Nerd Font:size=12:style=bold:antialiasing=true;autohint=true";
+static char *font = "DejaVu Sans Mono Nerd Font:size=12:antialiasing=true;autohint=true";
 static int borderpx = 2;
 
 /*
@@ -99,13 +99,13 @@ static const char *colorname[] = {
 
   /* 8 bright colors */
   [8]  = "#41535b", /* black   */
-  [9]  = "#cd3f45", /* red     */
+  [9]  = "#cd3f65", /* red     */
   [10] = "#9fca56", /* green   */
-  [11] = "#f1e640", /* yellow  */
-  [12] = "#268bd2", /* blue    */
-  [13] = "#a074c4", /* magenta */
-  [14] = "#55dbbe", /* cyan    */
-  [15] = "#ffffff", /* white   */
+  [11] = "#f1e660", /* yellow  */
+  [12] = "#268df3", /* blue    */
+  [13] = "#a077f5", /* magenta */
+  [14] = "#55dbcf", /* cyan    */
+  [15] = "#ffffee", /* white   */
 
   /* special colors */
   [256] = "#262626", /* background */
